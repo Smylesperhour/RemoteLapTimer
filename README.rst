@@ -1,3 +1,34 @@
+Remote Lap Timing Project
+=========================
+The remote lap timing project was designed as part of CSE 521S Wireless Sensor Networks. The overall goal of the project was to create a lap timing device for Washington University's Formula FSAE team. Through the use of a Raspberry Pi and Amazon's Web Services (AWS) cloud computing, the setup is relatively compact and wireless.The laser trip wire is setup through the use of a class II laser, photoresistor, and a capacitor. When the system is triggered an SMS or SNS message is sent to a cellular device for data logging purposes.
+
+Getting Started
+
+Please follow the AWS SDK for Python instructions listed at the bottom of this document for connectivity to the aws cloud
+Please download laser.py in a Python compiler such as PyCharm and run on a device that is connected to a basic ldr circuit. In order to properly use, please calibrate in such a way that the feedback level triggers an event when a desired device (such a s a vehicle) corsses the plane connecting the ldr to a basic laser pointer. 
+
+Prerequisites
+
+-Raspberry Pi 2 or newer with basic ldr circuit layout
+-Laser pointer
+-XRDP - This is for remote desktop connectivity, allowing for easy implementation on a personal computer for field access to your reciever
+-Pycharm or similar Python compiler
+-Suggested: GUI for easy data manipulation
+
+Running the tests
+
+Please download and run the test function inside of laser().py in order to check light levels before and after breeching the plane to ensure a significant change is occuring. This will ensure that the system will not falsely trip and will trip when the plane is broken by the vheicle. 
+
+
+Authors
+Akash Sen
+Myles Rivera
+Zack Weld
+
+License
+This project is licensed under the MIT License - see the LICENSE.md file for details
+
+
 AWS IoT Device SDK for Python
 =============================
 
